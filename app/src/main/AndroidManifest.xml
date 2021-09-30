@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ardee.thegreattravelagency">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TheGreatTravelAgency">
+        <activity
+            android:name=".AddPassengerActivities"
+            android:exported="true"
+            android:label="Select Activities"/>
+        <activity
+            android:name=".AddPassenger"
+            android:exported="true"
+            android:label="Add Passenger" />
+        <activity
+            android:name=".Passengers"
+            android:exported="true"
+            android:label="Passengers" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="true"
+            android:label="Add Activity" />
+        <activity
+            android:name=".Activities"
+            android:exported="true"
+            />
+        <activity
+            android:name=".AddDestination"
+            android:exported="true"
+            android:label="Add Destination" />
+        <activity
+            android:name=".Destinations"
+            android:exported="true"
+            android:label="Destinations" />
+        <activity
+            android:name=".PackageInformation"
+            android:exported="true"
+            android:label="Package Information"
+            />
+        <activity
+            android:name=".AddTravelPackage"
+            android:exported="true"
+            android:label="Add Travel Package"
+            android:parentActivityName=".TravelPackages" />
+        <activity
+            android:name=".TravelPackages"
+            android:exported="true"
+            android:label="Travel Packages"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

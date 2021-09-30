@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageInformation">
+   <TextView
+       android:id="@+id/id_set_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="working"
+       android:textColor="@color/teal_200"
+       android:textSize="54dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginTop="20dp"
+       />
+   <TextView
+       android:id="@+id/id_pack_inf_package"
+       android:text="Package"
+       android:textColor="@color/teal_200"
+       android:textSize="54dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/id_set_name"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       />
+   <Button
+       android:id="@+id/id_pack_inf_destinations"
+       android:onClick="OpenDestinationsActivity"
+       android:text="Destinations -->"
+       android:textSize="28dp"
+       android:padding="20dp"
+       android:layout_marginTop="48sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/id_pack_inf_package"
+      />
+   
+   <Button
+       android:id="@id/id_pack_inf_passengers"
+       android:text="Passengers -->"
+       android:onClick="OpenPassengersActivity"
+       android:textSize="28dp"
+       android:padding="20dp"
+       android:layout_marginTop="54sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@+id/id_pack_inf_destinations"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+
+       />
+
+   <Button
+       android:id="@+id/download_itinerary"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="36dp"
+       android:onClick="downloadItinerary"
+       android:text="Download\nItinerary"
+       android:textSize="15dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+
+       app:layout_constraintTop_toBottomOf="@+id/id_pack_inf_passengers" />
+   <Button
+       android:id="@+id/download_passenger_list"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="36dp"
+       android:onClick="downloadPassengerList"
+       android:text="Download\nPassengers\n LIst"
+       android:textSize="15dp"
+       app:layout_constraintLeft_toRightOf="@id/download_itinerary"
+       app:layout_constraintTop_toBottomOf="@+id/id_pack_inf_passengers" />
+
+   <Button
+       android:id="@+id/download_spacious_activity"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="36dp"
+       android:onClick="downloadSpaciousActivities"
+       android:text="Download\n Activities"
+       android:textSize="15dp"
+       app:layout_constraintLeft_toRightOf="@id/download_passenger_list"
+       app:layout_constraintTop_toBottomOf="@+id/id_pack_inf_passengers" />
+</androidx.constraintlayout.widget.ConstraintLayout>
